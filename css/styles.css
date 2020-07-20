@@ -1,0 +1,461 @@
+		
+		body{
+			background-color: #e6e6e6;
+		}
+
+		.img_table{
+			padding: 0px;
+			text-align: center;
+		}
+
+		.conteudo_consulta{
+			margin: 0 2% 0 2%;
+			width: 96%; 
+			padding-top: 30px; 
+			border-size: 2px; 
+			border-color: lightgray; 
+			padding: 0;
+		}
+
+		.conteudo{
+			border-right: 10px solid #f2f2f2;
+			border-left: 10px solid #f2f2f2;
+			background-color: white;
+			width: 60%;
+			margin: 0px 20% 0px 20%;
+			padding: 6% 0 6% 0;
+		}
+
+		.table_titulo{
+			font-size: 32px;
+			font-weight: bold;
+			color: #00aaff;
+			text-align: center;
+			margin-bottom: 0;
+			padding: 15px 0 15px 0;
+		}
+
+		.dados_name{
+			display: inline-block;
+			float: left;
+			background-color: #1aa3ff;
+			padding: 6px;
+		}
+
+		.dados_name_xs{
+			display: inline-block;
+			float: left;
+			background-color: #1aa3ff;
+			padding: 6px;
+			width: 20%;
+		}
+
+		.dados_data{
+			display: inline-block;
+			float: left;
+			background-color: #e6f5ff;
+			padding: 6px;
+			border-left: 5px solid #4db8ff;
+		}
+
+		.dados_data_xs{
+			display: inline-block;
+			float: left;
+			background-color: #e6f5ff;
+			padding: 6px;
+			width: 30%;
+		}
+
+		.scrollable{
+			margin-top: 30px;
+			height: 500px;
+			overflow: scroll;
+		}
+
+		thead td{
+			font-weight: bold;
+			font-size: 11px;
+			background-color: #0088cc;
+			padding: 2px;
+		}
+
+		table{
+			padding: 3px;
+			font-size: 11px;
+			margin-top: 0;
+		}
+
+		a.excluir{
+			background-color: red;
+			border-color:red;
+		}
+
+		a.excluir:hover{
+			background-color: #cc0000;
+			border-color: #cc0000;
+		}
+
+		.filtros{
+			background-color : #e6e6e6;
+			border-top:12px solid #f2f2f2;
+			border-bottom:12px solid #f2f2f2;
+			padding: 10px;
+			font-size: 12px;
+			margin-top: 0;
+			text-align: center;
+			float: center;
+		}
+
+		.filtrar{
+			text-align: center;
+			margin-bottom: -11px;
+			margin-top: 10px;]margin-bottom: 0;
+		}
+
+		.filtrar:hover{
+			background-color: #d9d9d9;
+		}
+
+		#modalModelo{
+			border: 1px solid lightgray;
+		}
+
+		.modal-body form{
+			padding: 30px;
+		}
+
+		#modalModelo input{
+			font-size: 16px;
+			padding: 2px;
+			margin-bottom: 14px;
+		}
+
+		._radio{
+			float: left;
+			display: inline-block;
+		}
+
+		#modalModelo ._radio input{
+			margin-bottom: 18px;
+		}
+
+		#modalModelo ._radio label{
+			font-size: 15px;
+		}
+
+		.modal-header{
+			background-color: #0088cc;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+
+		.modal-body{
+			border-top: 5px solid lightblue;
+			margin-top: -1px;
+		}
+
+		.input_modal{
+			float: left;
+			display: inline-block;
+		}
+
+		thead button{
+			background-color: #0088cc;
+			color: black;
+			font-weight: bold;
+			border: none;
+		}
+
+
+		/* Alteram a cor dos botões com base na página atual, para dar destaque ao botão/botões que representam a página atual */
+		/* O primeiro altera os botões principais */
+
+		body#home li.home>a, body#alunos_cadastro li.alunos>a, body#alunos_consulta li.alunos>a,
+		body#livros_cadastro li.livros>a, body#livros_consulta li.livros>a, body#saidas_cadastro li.saidas>a,
+		body#saidas_consulta li.saidas>a, body#adms_cadastro li.adms>a, body#adms_consulta li.adms>a,
+		body#perfil li.perfil>a{
+			background-color: #0077b3;
+			color: white;
+		}
+
+		/* O segundo altera os botões dos dropdowns */
+
+		body#alunos_cadastro li.alunos_cadastro,body#alunos_cadastro li.alunos_cadastro a,
+		body#alunos_consulta li.alunos_consulta,body#alunos_consulta li.alunos_consulta a,
+		body#livros_cadastro li.livros_cadastro,body#livros_cadastro li.livros_cadastro a,
+		body#livros_consulta li.livros_consulta,body#livros_consulta li.livros_consulta a,
+		body#saidas_cadastro li.saidas_cadastro,body#saidas_cadastro li.saidas_cadastro a,
+		body#saidas_consulta li.saidas_consulta,body#saidas_consulta li.saidas_consulta a,
+		body#adms_cadastro li.adms_cadastro,body#adms_cadastro li.adms_cadastro a,
+		body#adms_consulta li.adms_consulta,body#adms_consulta li.adms_consulta a{
+			color:black;
+			background-color: #cccccc;
+
+		}
+
+		.acessar{
+			background-color: #0088cc;
+			color: black;
+			border: none;
+			padding: 5px 25px 5px 25px;
+			font-family: Verdana;
+			color: white;
+		}
+
+		input.acessar:hover{
+			background-color: #0077b3;
+		}
+
+		.buscar:hover{
+			background-color: #0077b3;
+		}
+
+		.login{
+			border-right: 100px solid #e6e6e6;
+			border-left: 100px solid #e6e6e6;
+			background-color: #d9d9d9;
+			padding: 20px 10% 5% 10%;
+			width: 60%;
+			margin: 0px;
+			margin-left: 20%;
+			text-align: center;
+		}
+
+		.erro{
+			background-color: #ffcccc;
+			color: #660000;
+			font-size: 16px;
+			padding: 8px;
+			text-align: center;
+			width: 70%;
+			margin: auto
+		}
+
+		.welcome{
+			text-align: center;
+			font-family: Verdana;
+			font-size: 23px;
+			background-color: white;
+			padding: 15px 10px 10px 30px;
+			border-bottom: 2px solid lightgray;
+		}
+
+		.notificacao{
+			border-right: 1px solid white;
+			border-left: 1px solid white;
+			width: 35%;
+			background-color: #f2f2f2;
+			padding: 10px; 
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.overflow_tabela{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			max-width: 0;
+		}
+
+		.overflow_detalhes{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: scroll;
+			overflow-x: auto;
+		}
+
+		input{
+			padding: 6px 20px 6px 20px;
+		}
+
+		input:focus{
+			outline-color: gray;
+			outline: none;
+		}
+
+		input:hover{
+			outline-color: gray;
+		}
+
+		.menuDiv{
+			margin:0;
+			border-top: lightgray 5px solid;
+			border-bottom: #0099e6 7px solid;
+			padding: 0px;
+			background-color: #0088cc;
+			color: black;
+			font-size: 14px;
+			font-weight: bold;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-family: Verdana;
+		}
+
+		.footer{
+			background-color: #0088cc;
+			border-bottom: lightgray 5px solid;
+			border-top: #0099e6 7px solid;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 10px; 
+		}
+
+		#logo{
+			padding: 16px 0px 16px 0px;
+			text-align: center;
+			background-color: #e6e6e6;
+			font-family: Verdana;
+			color: black;
+			font-size: 30px;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		#logo p{
+			font-size: 20px;
+		}
+
+		.nav-link{
+			color: black;
+			font-size: 14px;
+			margin: 0px;
+		}
+
+		table thead td a{
+			padding: 15px;
+			text-decoration: none;
+			color: black;
+		}
+
+		table thead a:hover{
+			padding: 10px auto 10px auto;
+			text-decoration: none;
+			color: white;
+			background-color: #0077b3;
+		}
+
+		table thead a.atual_asc{
+			padding: 10px auto 10px auto;
+			text-decoration: none; 
+			color: white;
+			background-color: #0077b3;
+			
+		}
+
+		table thead a.atual_asc::before{
+			font-size: 12px;
+			margin-right: 3px;
+			content: '\2191';
+		}
+
+		table thead a.atual_desc{
+			padding: 10px auto 10px auto;
+			text-decoration: none; 
+			color: white;
+			background-color: #0077b3;
+			
+		}
+
+		table thead a.atual_desc::before{
+			font-size: 12px;
+			margin-right: 3px;
+			content: '\2193';
+		}
+
+		table{
+			text-align: center;
+		}
+
+		.nav-item a:hover{
+			background-color: #0077b3;
+			color: white;
+		}
+		h1{
+			margin-bottom: -30px;
+		}	
+		.menuDivXs{
+			margin: 0px;
+			border-top: lightgray 5px solid;
+			border-bottom: #0099e6 7px solid;
+			padding: 0px;
+			background-color: #0088cc;
+			color: black;
+			font-weight: bold;
+			padding-left: 5px;
+			padding-right: 10px;
+			font-family: Verdana;
+		}
+		.menuDivXs .nav-link{
+			color: black;
+			font-size: 12px;
+			margin-bottom: 2px;
+			padding: 1px 6px 2px 6px;
+		}
+		.menuDivXs ul li{
+			padding: -20px;
+			margin-right: 8px;
+			font-size: 16px;
+		}
+		.menuDivXs ul li a{
+			padding: 10px;
+		}
+		p{
+			font-size: 14px;
+		}
+
+		.menuDivXs button{
+			padding: 2px;
+			margin-top: 10px;
+		}
+		nav button{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		button img{
+			padding: 5px;;
+		}
+		#textoMobile{
+			padding: 2px 4px 2px 4px;
+			margin-left: 5%;
+			margin-top: 5px;
+			margin-right: 125px;
+			font-family: Verdana;
+			font-weight: bold;
+			display: inline-block;
+		}
+		
+
+		div.dropdown-menu{
+			margin-left: -30px;
+			padding: 0px;
+		}
+		div.dropdown-menu ul{
+			margin-left: -30px;
+			padding: 0px;
+		}
+
+		div.dropdown-menu ul li{
+			text-align: center;
+			margin: 0px;
+			background-color: #e6e6e6;
+			border: 1px solid #cccccc;
+			margin-bottom: -1px;
+		}
+		div.dropdown-menu ul li a{
+			color: black;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: Verdana;
+			font-weight: bold;
+			background-color: #e6e6e6;
+		}
+		div.dropdown-menu li:hover, div.dropdown-menu li:hover>a{
+			background-color: #cccccc;
+			color: black;
+		}
+
+
+
+		
+		

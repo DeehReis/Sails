@@ -1,0 +1,22 @@
+{
+    "name": "aluno/database-laravel",
+    "type": "project",
+    "require": {
+        "illuminate/database": "^8.0@dev"
+    },
+    "require-dev": {
+        "illuminate/events": "^8.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Reis",
+            "email": "andretritolareis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    }
+}
