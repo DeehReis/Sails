@@ -359,10 +359,6 @@
 			$_SESSION['filtro_1'] = $filtro_1;
 			$_SESSION['filtro_2'] = $filtro_2;
 			
-			if(!(empty($_POST['exibir']))){
-				$_SESSION['exibir'] = $_POST['exibir'];
-			}
-			
 			header('Location: ../paginas_aluno/livros_consulta_aluno.php');
 			exit();
 			break;
