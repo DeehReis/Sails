@@ -106,56 +106,20 @@
 							// Foreach para percorrer banco de dados; Switch case para filtrar de acordo com o filtro Ativo/Inativo
 
 							foreach ($livros as $key => $value) {
-
-								if(isset($_SESSION['exibir']) == false){
-									$_SESSION['exibir'] = "ativos";
+								
+								if($value->ativo==1){
+									?>
+										<tr>
+											<td><?php echo $value->titulo; ?></td>
+											<td><?php echo $value->autor ?></td> 
+											<td><?php echo $value->editora; ?></td>
+											<td><?php echo $value->ano_edicao; ?></td>
+											<td><?php echo $value->volume; ?></td>
+											<td><?php echo $value->categoria; ?></td>
+										</tr>
+									<?php
 								}
-
-								switch ($_SESSION['exibir']) {
-									case 'ambos':
-											?>
-												<tr>
-													<td><?php echo $value->titulo; ?></td>
-													<td><?php echo $value->autor ?></td> 
-													<td><?php echo $value->editora; ?></td>
-													<td><?php echo $value->ano_edicao; ?></td>
-													<td><?php echo $value->volume; ?></td>
-													<td><?php echo $value->categoria; ?></td>
-												</tr>
-											<?php
-										break;
-									
-									case 'inativos':
-										if($value->ativo==0){
-											?>
-												<tr>
-													<td><?php echo $value->titulo; ?></td>
-													<td><?php echo $value->autor ?></td> 
-													<td><?php echo $value->editora; ?></td>
-													<td><?php echo $value->ano_edicao; ?></td>
-													<td><?php echo $value->volume; ?></td>
-													<td><?php echo $value->categoria; ?></td>
-												</tr>
-											<?php
-										}
-										break;
-
-									case 'ativos': default:
-										if($value->ativo==1){
-										?>
-												<tr>
-													<td><?php echo $value->titulo; ?></td>
-													<td><?php echo $value->autor ?></td> 
-													<td><?php echo $value->editora; ?></td>
-													<td><?php echo $value->ano_edicao; ?></td>
-													<td><?php echo $value->volume; ?></td>
-													<td><?php echo $value->categoria; ?></td>
-												</tr>
-										<?php
-										}
-										break;
-								}
-
+								
 							}
 						?>
 					</tbody>
