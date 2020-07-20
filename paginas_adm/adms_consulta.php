@@ -123,14 +123,30 @@
 
 				// Mensagem em caso de erros no cadastro
 
-				if(isset($_SESSION['erro_cadastro']) && $_SESSION['erro_cadastro'] == 1){
+				if(isset($_SESSION['erro_cadastro'])){
 
-					?>
-					<div class="erro">
-						Erro ao cadastrar, campos em branco!
-					</div>
-					<?php
+					switch ($_SESSION['erro_cadastro']) {
+						case '1':
+							?>
+							<div class="erro">
+								Erro ao cadastrar, campos em branco!
+							</div>
+							<?php
+							break;
+						
+						case '2':
+							?>
+							<div class="erro">
+								Erro ao cadastrar, login de administrador já existente!
+							</div>
+							<?php
+							break;
+
+						default:
+							break;
+					}
 				}
+
 			?>
 
 			<br>
