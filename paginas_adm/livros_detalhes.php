@@ -128,6 +128,27 @@
 			<span class="table_titulo" style="border:none;">Detalhes do Livro</span>
 			<br>
 		</div>
+		<br>
+
+		<?php
+
+			// Mensagem de erro ao deletar livro
+
+			if(isset($_GET['erro']) && $_GET['erro'] ==2){
+				$_GET['erro'] = 0;
+				?>
+
+				<div class="erro">
+						
+					Erro! Não é possível deletar livros com itens não devolvidos.
+
+				</div>
+
+				<?php
+			}
+
+		?>
+
 
 		<!-- Tabela de dados, para DESKTOP -->
 
