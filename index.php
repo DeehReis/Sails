@@ -89,7 +89,7 @@
 					}
 				?>
 
-				<form action="validation.php" method="post">
+				<form action="paginas_processos/validation.php" method="post">
 					<input type="text" name="login" placeholder="Login"><br><br>
 					<input type="password" name="senha" placeholder="Senha"><br><br><br>
 					<input type="submit" value="Acessar" class="acessar">
