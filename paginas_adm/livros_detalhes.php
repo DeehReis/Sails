@@ -94,6 +94,30 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Modal de exclusão -->
+
+		<div class="modal fade" id="modalConfirma" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+		      		<div class="modal-header">
+		        		<h5 class="modal-title" id="exampleModalLabel" style="padding-left: 5%">&bull; Confirmar exclusão</h5>
+
+		        		<button type="button" class="close" data-dismiss="modal">
+		          			<span>&times;</span>
+		        		</button>
+
+		      		</div>
+		      		<div class="modal-body" style="text-align: center">
+
+		      			<a class="btn btn-primary excluir" href="../paginas_processos/editar.php?id=<?php echo $id; ?>&pg=livros&delete=<?php echo true; ?>">
+		   					Excluir
+		   				</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Chamada do header -->
 
@@ -189,9 +213,9 @@
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalModelo" style="margin-right: 20px">
 	  				Editar dados do livro
 				</button>
-				<a class="btn btn-primary excluir" href="../paginas_processos/editar.php?id=<?php echo $id; ?>&pg=livros&delete=<?php echo true; ?>">
-		   			Excluir
-		   		</a>
+				<button type="button" class="btn btn-primary excluir" data-toggle="modal" data-target="#modalConfirma" style="margin-right: 20px">
+	  				Excluir
+				</button>
 		   		<br><br>
 			</div>		
 		</div>
@@ -207,9 +231,9 @@
 	  				Editar
 				</button>
 				<br><br>
-				<a class="btn btn-primary excluir" href="../paginas_processos/editar.php?id=<?php echo $id; ?>&pg=livros&delete=<?php echo true; ?>">
-		   			Excluir
-		   		</a>
+				<button type="button" class="btn btn-primary excluir" data-toggle="modal" data-target="#modalConfirma" style="margin-right: 20px">
+	  				Excluir
+				</button>
 		   		<br><br>
 			</div>		
 		</div>
