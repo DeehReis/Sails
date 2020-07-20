@@ -84,39 +84,6 @@
 				}	
 
 			?>
-
-			<!-- DIV com opções de filtragem por ativo/inativo, para DESKTOP -->
-
-			<div class="filtros d-none d-sm-block">
-				<form action="../paginas_processos/filtros.php?pg=livros_aluno" method="POST" style="display: inline">
-					<input type="radio" name="exibir" value="ativos" style="margin: 20px">
-					<label>Ativos</label>
-					<input type="radio" name="exibir" value="inativos" style="margin: 20px">
-					<label>Inativos</label>
-					<input type="radio" name="exibir" value="ambos" style="margin: 20px">
-					<label>Ambos</label>
-					<input type="submit" value="Exibir" style="margin-left: 30px;">
-				</form>
-
-			</div>
-
-			<!-- DIV com opções de filtragem por ativo/inativo, para MOBILE -->
-
-			<div class="filtros d-block d-sm-none">
-				<br>
-				<form action="../paginas_processos/filtros.php?pg=livros_aluno" method="POST" style="display: inline">
-					<input type="radio" name="exibir" value="ativos" style="margin: 20px 10px 20px 10px">
-					<label>Ativos</label>
-					<input type="radio" name="exibir" value="inativos" style="margin: 20px 10px 20px 10px">
-					<label>Inativos</label>
-					<input type="radio" name="exibir" value="ambos" style="margin: 20px 10px 20px 10px">
-					<label>Ambos</label>
-					<br>
-					<input type="submit" value="Exibir">
-				</form>
-
-			</div>
-
 			<!-- Tabela de livros cadastrados -->
 
 			<div class="scrollable" style="margin-top: 0">
