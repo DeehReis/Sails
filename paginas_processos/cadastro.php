@@ -78,6 +78,13 @@
 			break;
 
 		case 'adms':
+
+			if(!(empty(adm_users::where(['login'=>$_POST['login']])->value('id_adm')))){
+				$_SESSION['erro_cadastro'] = 2;
+				header('Location: ../paginas_adm/adms_consulta.php');
+				exit();
+			}
+
 			if(empty($_POST['nome']) || empty($_POST['sobrenome']) || empty($_POST['sexo']) || empty($_POST['nascimento']) || empty($_POST['cidade']) || empty($_POST['email']) || empty($_POST['ddd']) || empty($_POST['telefone']) || empty($_POST['senha']) || empty($_POST['login'])){
 
 				$_SESSION['erro_cadastro'] = 1;
