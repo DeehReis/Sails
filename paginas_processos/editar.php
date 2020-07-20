@@ -43,6 +43,17 @@
 
 				$itens = itens::where(['id_livro'=>$id])->get();
 
+
+				foreach($itens as $key => $value){
+
+					if(saidas::where(['id_item'=>$value->id_item])->value(_status)==0){
+
+						header('location: ../paginas_adm/livros_detalhes.php?erro=2&id='.$id);
+						exit();
+					}
+
+				}
+
 				foreach($itens as $key => $value){
 
 					$del = itens::where(['id_item'=>$value->id_item])->delete();
