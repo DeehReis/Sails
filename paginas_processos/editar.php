@@ -40,6 +40,15 @@
 				break;
 			
 			case 'livros':
+
+				$itens = itens::where(['id_livro'=>$id])->get();
+
+				foreach($itens as $key => $value){
+
+					$del = itens::where(['id_item'=>$value->id_item])->delete();
+
+				}
+				
 				$del = livros::where(['id_livro'=>$id])->delete();
 				header('location: ../paginas_adm/livros_consulta.php');
 				exit();
